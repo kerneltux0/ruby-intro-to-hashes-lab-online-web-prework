@@ -14,8 +14,8 @@ end
 def monopoly_with_second_tier
   monopoly = {}
   monopoly = {:railroads => {}}
-  piece_hash = {:pieces => 4}
-  monopoly[:railroads].merge!(piece_hash)
+  monopoly[:railroads][:pieces] = 4
+  monopoly[:railroads] = {:names => {}}
   monopoly
 end
 
